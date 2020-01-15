@@ -54,7 +54,7 @@ class KnoxSerializer(TokenSerializer):
             )
             raise
 
-        token = AuthToken.objects.create(obj)
+        _, token = AuthToken.objects.create(obj)
         return token
 
 
